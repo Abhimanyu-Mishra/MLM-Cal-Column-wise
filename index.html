@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MLM Matrix Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <center>
+  <br class="container">
+    <h1 class="dynamic-letter">MLM Matrix Calculator</h1>
+    <h2 >Valzon India </h2>
+    <div>
+      <label class="dynamic-letter" for="joiningFees">Joining Fees:</label>
+      <input type="number" id="joiningFees" step="0.01" min="0"><br></br>
+    </div>
+    <div>
+      <label class="dynamic-letter" for="numberOfLegs">Number of Legs:</label>
+      <input type="number" id="numberOfLegs" min="1"><br></br>
+    </div>
+    <div>
+      <label class="dynamic-letter" for="depthValues">Depth Values in Each Leg (comma-separated):</label>
+      <input type="text" id="depthValues"><br></br>
+    </div>
+    <div>
+      <label for="bonus">Bonus per Pair:</label>
+      <input type="number" id="bonus" step="0.01" min="0" value="0"><br></br>
+    </div>
+    <br>
+      <label for="tds">TDS:</label>
+      <input type="number" id="tds" step="0.01" min="0" value="0"><br><br>  </br>
+    </div>
+    <div>
+      <label for="adminCharges">Admin Charges:</label>
+      <input type="number" id="adminCharges" step="0.01" min="0" value="0"><br></br>
+    </div>
+    <button onclick="calculateProfit()">Calculate Profit</button>
+  </br></br>
+    <div id="result"></div>
+  </div>
+</center>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 40px;
+    background: linear-gradient(#5b7168, #9198e5);
+}
+
+h1 {
+    text-align: center;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+label {
+    margin-right: 10px;
+}
+
+button {
+    padding: 8px 16px;
+}
+
+.result {
+    margin-top: 20px;
+}
+p{
+    background-color: white;
+}
+.head{
+    font-size: 2em;
+    background-color: aquamarine;
+    padding: 2%;
+    border-radius: 20px;
+}
+.data{
+    text-align: center;
+    width: 40%;
+}
+
+.dynamic-letter::first-letter {
+    /* Add your dynamic styles here */
+    font-size: 2em;
+    color: red;
+    /* and other styles as needed */
+  }
+
+  /* Define a keyframes animation */
+
+  
+  /* Apply the animation to an element */
+  .dynamic-letter {
+    animation-name: dynamicTextAnimation;
+    animation-duration: 4s; /* Animation duration */
+    animation-timing-function: linear; /* Linear animation */
+    animation-iteration-count: infinite; /* Loop the animation indefinitely */
+  }
+
+  @keyframes dynamicTextAnimation {
+    0% {
+      content: "Text 1";
+    }
+    33% {
+      content: "Text 2";
+    }
+    66% {
+      content: "Text 3";
+    }
+    100% {
+      content: "Text 4";
+    }
+  }
+  
