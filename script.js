@@ -74,11 +74,15 @@ console.log(sum-(2*pair));
 
 
  
-  const TotalJoiningFees = sum*joiningFees
-  console.log(TotalJoiningFees);
+  // const TotalJoiningFees = (sum+1)*joiningFees
+  // console.log(TotalJoiningFees);
   const bonus = parseFloat(document.getElementById("bonus").value);
-  const tds = parseFloat(document.getElementById("tds").value);
-  const adminCharges = parseFloat(document.getElementById("adminCharges").value);
+  // const tds = parseFloat(document.getElementById("tds").value);
+  // const adminCharges = parseFloat(document.getElementById("adminCharges").value);
+  // const Capping = parseInt(document.getElementById("capping").value);
+
+  // const Tcapping = TotalJoiningFees*Capping/100
+
 
   // // Calculate total pair and bonus income
   // const totalPairs = Math.floor(numberOfLegs / 2);
@@ -93,17 +97,17 @@ console.log(sum-(2*pair));
   // // }
 
   totalBonus = pair*bonus
-  Ttds = (tds*totalBonus/100)
-  TadminCharges = ( adminCharges*totalBonus/100)
+  // Ttds = (tds*totalBonus/100)
+  // TadminCharges = ( adminCharges*totalBonus/100)
 
   // Calculate total profit
-  const totalProfit = TotalJoiningFees - (Ttds + TadminCharges+totalBonus)
+  // const totalProfit = TotalJoiningFees - (Ttds + TadminCharges+totalBonus)
 
   // Display the result
   const resultElement = document.getElementById("result");
   resultElement.innerHTML = `Total Pairs: ${pair}<br>
                             Total UnPairs: ${unpair}<br>
-                           Total Bonus Income: ${totalBonus}<br>
-                           <h2>Total JoiningAmount: ${TotalJoiningFees}<br>
-                           Total Profit: ${totalProfit}</h2>`;
+                          <h2> Total Bonus Income: ${totalBonus}<br>                          
+                          
+                           </h2>`;
 }
