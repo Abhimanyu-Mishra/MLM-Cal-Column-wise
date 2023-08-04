@@ -1,4 +1,5 @@
 
+
 function calculateProfit() {
   const joiningFees = parseFloat(document.getElementById("joiningFees").value);
   const numberOfLegs = parseInt(document.getElementById("numberOfLegs").value);
